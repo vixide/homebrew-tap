@@ -1,25 +1,25 @@
 class VixIced < Formula
   desc "Vix desktop GUI on iced: the full Vix App in a native window."
   homepage "https://github.com/vixide/vix"
-  version "2.0.2"
+  version "2.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-iced-aarch64-apple-darwin.tar.xz"
-      sha256 "095eacbe4157f0d6125aecf5849c006a9c37c61882edffcb3ace238b9043c6b5"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-iced-aarch64-apple-darwin.tar.xz"
+      sha256 "b833c79cbbe821385f176e18763773062daf56d9801f4e2df667473d8eab6d9a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-iced-x86_64-apple-darwin.tar.xz"
-      sha256 "7279a14426296691542252d939b0be34132cbe5d57876aab37a5f7d93c20742f"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-iced-x86_64-apple-darwin.tar.xz"
+      sha256 "de8ac615176c4f07fe45a1312510fbf534076c1e84180d60e6093009674c62fb"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-iced-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4a668c534fd4b051dbff081009b03ef74783f311503c0a9a5138ad88ecf18547"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-iced-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "bf4ee0966f6cbcc8438a2ebe37024b46428baa734c663d29805583c6ae6186b0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-iced-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "eb4e9eb6a7e634b90221a7bfc36228208a4ad7ab6006708bcaf742f7b015db56"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-iced-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "02179c9de517d4e6e5fa6f463307faec95b2b63d4600f259f211c95ed4d6e483"
     end
   end
   license any_of: ["Apache-2.0", "BSD-3-Clause", "MIT", "GPL-3.0-only"]
