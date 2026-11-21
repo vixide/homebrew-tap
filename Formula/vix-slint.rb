@@ -1,25 +1,25 @@
 class VixSlint < Formula
   desc "Vix desktop GUI on Slint: the full Vix App in a native window."
   homepage "https://github.com/vixide/vix"
-  version "2.0.2"
+  version "2.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-slint-aarch64-apple-darwin.tar.xz"
-      sha256 "08aeea1412bbd20e4dea325db62dbf9024cededcf2a7f1315f7553bac6efabe7"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-slint-aarch64-apple-darwin.tar.xz"
+      sha256 "2bf8f01ddc7a1f8d8493cb6a9d7a40a27756895d41a3cb3ca0365c4ee4095e5a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-slint-x86_64-apple-darwin.tar.xz"
-      sha256 "b56386821c8ae49ec3eb063a34af351920fd36f3c7d221a3388f7c2bf2e1d36f"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-slint-x86_64-apple-darwin.tar.xz"
+      sha256 "a5b9bd39c8c6fc4f0184a9a31bbe1d6fec0ea364ce10e8feb82e7e80fdd63b5a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-slint-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "721a4f8b698e321244364ef66d4c80f26c9309906ebead440d3df8011aa66e02"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-slint-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "91178c6514f0ae33d1d3a35d6fa3a06bf16e93fa35e5423b3b430dca94687764"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-slint-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "145b8fbbe631a14d6e2c78c02463caafe56c132c813ae76bf470ade6906d5a2e"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-slint-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c6cd06611e0056230d235c46284498cf202f6df886cdac78ad31368861a760c4"
     end
   end
   license "GPL-3.0-only"
