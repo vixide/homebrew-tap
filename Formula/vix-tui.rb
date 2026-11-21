@@ -1,25 +1,25 @@
 class VixTui < Formula
   desc "Vix IDE: a visual integrated development environment that is TUI, friendly, featureful, high-speed, and high-security."
   homepage "https://github.com/vixide/vix"
-  version "2.0.2"
+  version "2.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-tui-aarch64-apple-darwin.tar.xz"
-      sha256 "8d86637304ff0ce25676300bda07c05dfdcc19c6b29de94aa08eed1a46993491"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-tui-aarch64-apple-darwin.tar.xz"
+      sha256 "2491fbb58fd37a0090b4a383b028765e514842799ab8be455e300548d1931763"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-tui-x86_64-apple-darwin.tar.xz"
-      sha256 "b03627f1cb3fbac84340f800cf85da06eefae4f7ec660f07189d523897809dd4"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-tui-x86_64-apple-darwin.tar.xz"
+      sha256 "09fa663e00319ec8cc2527fe4a3834dff7189d15a55306cba7460a4ccde2ba12"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-tui-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1ce2ad051af5e911bc4ec9acdf1370799ae6b82188562063a35ebff1de144db9"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-tui-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "4a33ba62ed1495d03f83b048e43db763e570b81f1be25165824d77b63a54c068"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-tui-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8820d74839d13c95cb035a60c1d0fac6b6fbac4a5f3d0355a4198c42f7679d18"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-tui-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "261aa150b3def374655a092901df2fb1b4582386d25e95a69ceed6031601617f"
     end
   end
   license any_of: ["Apache-2.0", "BSD-3-Clause", "MIT", "GPL-3.0-only"]
