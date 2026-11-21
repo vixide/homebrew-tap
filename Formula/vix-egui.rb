@@ -1,25 +1,25 @@
 class VixEgui < Formula
   desc "Vix desktop GUI on egui (eframe): the full Vix App in a native window."
   homepage "https://github.com/vixide/vix"
-  version "2.0.2"
+  version "2.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-egui-aarch64-apple-darwin.tar.xz"
-      sha256 "a3491299a3e004a118f2b181b04749a9ae14bc9c5911d3b5d72300cd9edc380e"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-egui-aarch64-apple-darwin.tar.xz"
+      sha256 "649a750e543cc7604cd95440a9e3d3015866a71d2e9ad291c2cc52033304d7cf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-egui-x86_64-apple-darwin.tar.xz"
-      sha256 "fce9ea42cc251425e541a5de9b3460934b1c8fd7b26d76311e9799963fd986e2"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-egui-x86_64-apple-darwin.tar.xz"
+      sha256 "25f2c40efe96371347dc907b38795fc0d3f26b062be3f7a68acf435c29b3b7d0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-egui-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "72f5d03b004e0e5c81f4afcce635792a39ed021e5c13390480bff988be6106cd"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-egui-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "72ee8e6f9ca473860bc1cdadef83eccbca5804b92e0101336376a98fd70f0203"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vixide/vix/releases/download/2.0.2/vix-egui-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8b09680fcc5b8e14b8ac28d772b6d7dcd41e36c6608e0bc025718f26564547c2"
+      url "https://github.com/vixide/vix/releases/download/2.1.0/vix-egui-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "98d4e841f35cc952fa5fab3ad4dac7d621083c9b9ebc6e14b0b6002c07a75f7a"
     end
   end
   license any_of: ["Apache-2.0", "BSD-3-Clause", "MIT", "GPL-3.0-only"]
